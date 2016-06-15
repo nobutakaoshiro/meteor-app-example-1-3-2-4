@@ -1,12 +1,10 @@
-# Meteor 1.3.2.4
-
 # Usage
 
 ```bash
-git clone
+git clone https://github.com/nobutakaoshiro/meteor-app-example-1-3-2-4.git
 cd meteor-app-example-1-3-2-4
 meteor npm install
-meteor
+meteor npm start
 # => open http://localhost:3000/ with browser
 ```
 
