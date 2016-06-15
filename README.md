@@ -33,4 +33,16 @@ touch imports/api/items/{items,methods}.js \
       imports/ui/components/Items/{Item,Items}.js \
       imports/ui/containers/AppContainer.js \
       imports/ui/layouts/AppLayout.js
+
+# heroku setup
+heroku create meteor-app-example-1-3-2-4
+heroku buildpacks:set https://github.com/AdmitHub/meteor-buildpack-horse.git
+heroku addons:create mongolab
+heroku config:set ROOT_URL=https://meteor-app-example-1-3-2-4.herokuapp.com/
+heroku labs:enable http-session-affinity
+
+# deploy
+git push heroku master
+
+#=> open https://meteor-app-example-1-3-2-4.herokuapp.com/ with browser
 ```
